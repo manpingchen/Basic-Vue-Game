@@ -1,7 +1,6 @@
 # Basic Vue Game :fist::v::hand:
 Simple 'Paper Scissors Stone' game created by Vue.js
-
-https://user-images.githubusercontent.com/10693128/158072479-dbf20f6d-4aa4-40ad-9e79-9aef94bde571.mov
+<img width="1136" alt="Screen Shot 2022-03-13 at 6 35 41 PM" src="https://user-images.githubusercontent.com/10693128/158074149-a6041b1c-4389-45e6-a9da-43f67a05654a.png">
 
 
 ### Data Binding and Interpolation
@@ -46,4 +45,15 @@ const app = Vue.createApp({
 
 app.mount("#user-round");
 
+```
+
+
+### Form Event Binding and Event Modifier
+```html
+<!-- @submit.prevent prevents default page reload by submit event -->
+<form v-if="userName" @submit.prevent="submitForm">
+   <p>Win? Claim your reward below!</p>
+   <input @input="setAddress" type="text" placeholder="Send reward to this address!" />
+   <button>Submit</button>
+</form>
 ```
