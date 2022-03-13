@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Playfair+Display&display=swap");
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ a {
 
 header {
   text-align: center;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 #user-round {
@@ -47,22 +47,32 @@ header {
   margin: 0 0 1rem 0;
   padding-bottom: 1rem;
   border-bottom: 1px dashed #ddd;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 #user-round p {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.1rem;
+  font-family: "Fredoka", sans-serif;
 }
 
-#user-round img{
+#user-round img {
   width: 60px;
   height: 60px;
+  margin-top: 1rem;
+}
+
+#user-round form{
+  border-top: 1px dashed #ddd;
 }
 
 #user-round input {
-  font: inherit;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 35px;
+  width: 100%;
 }
 
 #user-round input:focus {
@@ -75,7 +85,7 @@ header {
   font: inherit;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
+  margin: 1rem 0 1rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 

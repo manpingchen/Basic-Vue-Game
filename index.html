@@ -19,9 +19,21 @@
     <section id="user-round">
       <!-- {{INTERPOLATION}} -->
       <h2>{{game}}</h2>
+      <!-- v-on:input="setName" or v-on:input="setName()" both works, 
+      HOWEVER, for "setName()" to get the default "event", we need to use setName($event, secArguments) -->
+      <p v-if="userName">Hello</p>
+      <p v-else>Are you ready?</p>
+      <input @input="setName" type="text" placeholder="Player1" />
       <!-- v-bind: allows VUE to use the attribute -->
       <img v-bind:src="result" />
       <button @click="outputResult()">Play</button>
+      <!-- @submit.prevent prevents default page reload by submit event -->
+      <form v-if="userName" @submit.prevent="submitForm">
+        <p>Win? Claim your reward below!</p>
+        <input @input="setAddress" type="text" placeholder="Send reward to this address!" />
+        <button>Submit</button>
+      </form>
+      <p v-if="address && userName">Great! {{userName}}, your reward will be sent to {{address}}!</p>
       <a v-bind:href="link" target="_blank">Vue JS</a>
     </section>
   </body>
