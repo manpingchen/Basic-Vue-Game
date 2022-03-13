@@ -5,7 +5,7 @@ Simple 'Paper Scissors Stone' game created by Vue.js
 
 ### Data Binding and Interpolation
 ```html
- <section id="user-round">
+<section id="user-round">
   <!-- {{INTERPOLATION}} -->
   <h2>{{game}}</h2>
   <!-- v-bind: allows VUE to use the attribute -->
