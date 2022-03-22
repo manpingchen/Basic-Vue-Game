@@ -1,4 +1,4 @@
-# Basic Vue Game :fist::v::hand:
+# <img width="50" src="https://user-images.githubusercontent.com/10693128/159541759-59467dc6-e720-4bff-85cb-bf0f85aa75c2.jpeg" /> Basic Vue Game :fist::v::hand:
 Simple 'Paper Scissors Stone' game created by Vue.js
 <img width="1136" alt="Screen Shot 2022-03-13 at 6 35 41 PM" src="https://user-images.githubusercontent.com/10693128/158074149-a6041b1c-4389-45e6-a9da-43f67a05654a.png">
 
